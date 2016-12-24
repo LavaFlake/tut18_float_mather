@@ -12,10 +12,10 @@ double getDouble() {
 char getSign() {
 	std::cout << "Give me a math operator (+, -, *, /): ";
 	
-	double a;
+	char a;
 	std::cin >> a;
 
-	return a;
+	return static_cast<int>(a);
 }
 
 void displayAnswer(double answer) {
